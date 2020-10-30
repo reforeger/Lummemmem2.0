@@ -5,10 +5,17 @@
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="stext"
-                   Text="This is a snowman"
+                   Text="A snowman"
                    FontSize="Large"
                    HorizontalOptions="CenterAndExpand">
             </Label>
+            <Frame x:Name="Hat"
+                   BackgroundColor="white"
+                   Padding="80"
+                   BorderColor="Gray"
+                   VerticalOptions="End"
+                   Margin="120,0">
+            </Frame>
             <Frame x:Name="small"
                    BackgroundColor="white"
                    Padding="80"
@@ -30,29 +37,30 @@
                    Padding="45"
                    Margin="80,0">
             </Frame>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Vertical">
+                <Button x:Name="btn1" 
+                        Text="Reset" 
+                        BackgroundColor="#6fde9f"
+                        HorizontalOptions="CenterAndExpand"
+                        Clicked="btn1_Clicked"
+                        />
                 <Button x:Name="btn" 
                         Text="Random stand color" 
                         BackgroundColor="Orange"
-                        HorizontalOptions="StartAndExpand"
+                        HorizontalOptions="CenterAndExpand"
                         Clicked="btn_Clicked"
                         />
-                <Button x:Name="btn1" 
-                        Text="Reset" 
-                        BackgroundColor="DarkGreen"
-                        HorizontalOptions="EndAndExpand"
-                        Clicked="btn1_Clicked"
-                        />
+
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Vertical">
                 <Button x:Name="ran" 
                         Text="Random snowman color" 
                         BackgroundColor="Orange"
-                        HorizontalOptions="StartAndExpand"
+                        HorizontalOptions="CenterAndExpand"
                         Clicked="ran_Clicked"
                         />
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Vertical">
                 <Button x:Name="inv" 
                         Text="Invisible" 
                         BackgroundColor="LightGray"
