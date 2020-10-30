@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lummemmem.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="stext"
+                   Text="This is a snowman"
+                   FontSize="Large"
+                   HorizontalOptions="CenterAndExpand">
+            </Label>
+            <Frame x:Name="small"
+                   BackgroundColor="white"
+                   Padding="80"
+                   CornerRadius="90" 
+                   BorderColor="Gray"
+                   VerticalOptions="End"
+                   Margin="120,0">
+            </Frame>
+            <Frame x:Name="big"
+                   BackgroundColor="white"
+                   Padding="90"
+                   CornerRadius="90" 
+                   BorderColor="Gray"
+                   VerticalOptions="End"
+                   Margin="100,0">
+            </Frame>
+            <Frame x:Name="under"
+                   BackgroundColor="Gray"
+                   Padding="45"
+                   Margin="80,0">
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btn" 
+                        Text="Random stand color" 
+                        BackgroundColor="Orange"
+                        HorizontalOptions="StartAndExpand"
+                        Clicked="btn_Clicked"
+                        />
+                <Button x:Name="btn1" 
+                        Text="Reset" 
+                        BackgroundColor="DarkGreen"
+                        HorizontalOptions="EndAndExpand"
+                        Clicked="btn1_Clicked"
+                        />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="ran" 
+                        Text="Random snowman color" 
+                        BackgroundColor="Orange"
+                        HorizontalOptions="StartAndExpand"
+                        Clicked="ran_Clicked"
+                        />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="inv" 
+                        Text="Invisible" 
+                        BackgroundColor="LightGray"
+                        HorizontalOptions="Start"
+                        Clicked="inv_Clicked"
+                        />
+                <Button x:Name="vis" 
+                        Text="Visible" 
+                        BackgroundColor="DarkGray"
+                        HorizontalOptions="Start"
+                        Clicked="vis_Clicked"
+                        />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
