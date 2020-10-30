@@ -21,6 +21,7 @@ namespace Lummemmem
             small.BackgroundColor = Color.White;
             big.BackgroundColor = Color.White;
             under.BackgroundColor = Color.Gray;
+            Hat.BackgroundColor = Color.FromHex("#545d63");
         }
         private void btn_Clicked(object sender, EventArgs e)
         {
@@ -36,6 +37,8 @@ namespace Lummemmem
             small.BorderColor = Color.White;
             big.Opacity = 0;
             big.BorderColor = Color.White;
+            Hat.Opacity = 0;
+            Hat.BorderColor = Color.White;
         }
 
         private void vis_Clicked(object sender, EventArgs e)
@@ -45,6 +48,8 @@ namespace Lummemmem
             small.BorderColor = Color.Gray;
             big.Opacity = 1;
             big.BorderColor = Color.Gray;
+            Hat.Opacity = 1;
+            Hat.BorderColor = Color.Gray;
         }
 
         private void ran_Clicked(object sender, EventArgs e)
@@ -52,8 +57,10 @@ namespace Lummemmem
             stext.Text = "The snowman is randomly painted";
             Color randomColor2 = Color.FromRgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
             Color randomColor3 = Color.FromRgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
+            Color randomColor4 = Color.FromRgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
             small.BackgroundColor = randomColor2;
             big.BackgroundColor = randomColor3;
+            Hat.BackgroundColor = randomColor4;
         }
     }
 }

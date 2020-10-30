@@ -10,11 +10,10 @@
                    HorizontalOptions="CenterAndExpand">
             </Label>
             <Frame x:Name="Hat"
-                   BackgroundColor="white"
-                   Padding="80"
-                   BorderColor="Gray"
+                   BackgroundColor="#545d63"
+                   Padding="40"
                    VerticalOptions="End"
-                   Margin="120,0">
+                   Margin="160,0">
             </Frame>
             <Frame x:Name="small"
                    BackgroundColor="white"
@@ -34,7 +33,7 @@
             </Frame>
             <Frame x:Name="under"
                    BackgroundColor="Gray"
-                   Padding="45"
+                   Padding="10"
                    Margin="80,0">
             </Frame>
             <StackLayout Orientation="Vertical">
@@ -63,14 +62,16 @@
             <StackLayout Orientation="Vertical">
                 <Button x:Name="inv" 
                         Text="Invisible" 
-                        BackgroundColor="LightGray"
-                        HorizontalOptions="Start"
+                        TextColor="Black"
+                        BackgroundColor="White"
+                        HorizontalOptions="CenterAndExpand"
                         Clicked="inv_Clicked"
                         />
                 <Button x:Name="vis" 
                         Text="Visible" 
-                        BackgroundColor="DarkGray"
-                        HorizontalOptions="Start"
+                        TextColor="White"
+                        BackgroundColor="Black"
+                        HorizontalOptions="CenterAndExpand"
                         Clicked="vis_Clicked"
                         />
             </StackLayout>
